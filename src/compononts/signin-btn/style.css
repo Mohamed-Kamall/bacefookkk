@@ -1,0 +1,22 @@
+.SignInBtn{
+    background-color: #faffff;
+    text-align: center;
+    max-width: 190px;
+    padding: 10px 12px;
+    border-radius: 10px;
+    color: rgb(38, 38, 39);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+.SignInBtn:hover{
+    cursor: pointer;
+    background-color: rgb(51, 29, 16);
+    color: #ffffff;
+}
+
+.userInfo{
+    display: flex;
+    align-items: center;
+    
+}

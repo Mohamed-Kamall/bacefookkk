@@ -1,0 +1,9 @@
+.navbar{
+    display: flex;
+    background-color: #ffffff;
+    justify-content: space-between;
+    padding: 16px 28px;
+    color: rgb(19, 19, 17);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 800;
+}

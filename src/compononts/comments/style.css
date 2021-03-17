@@ -1,0 +1,12 @@
+.comment{
+    font-family:cursive;
+    display: flex;
+    justify-content: space-between;
+}
+.btn-delete{
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    color: rgb(241, 80, 80);
+}
