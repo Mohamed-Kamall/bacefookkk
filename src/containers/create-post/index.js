@@ -19,14 +19,15 @@ export default function CreatePost() {
 
     const  uploadHandler = () =>{
         if(image){
-            const uploadTask = storage.ref(`images/${makeId(10)}.jpg`).put(image);
+            var randId = makeId(10)
+            const uploadTask = storage.ref(`images/${randId}.jpg`).put(image);
 
             uploadTask.on('state_changed',(snapShot)=>{
                 const progress_ = Math.round((snapShot.bytesTransferred/snapShot.totalBytes)*100)
                 setProgress(progress_)
             },(error)=>console.log(error),
             ()=>{
-                storage.ref('images').child(`${makeId(10)}.jpg`).getDownloadURL()
+                storage.ref('images').child(`${randId}.jpg`).getDownloadURL()
                 .then((imageURL)=>{
                     db.collection('posts').add({
                         timestamp : timeStamp,

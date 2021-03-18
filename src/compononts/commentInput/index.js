@@ -23,11 +23,11 @@ export default function CommentInput({id,comments}) {
         })
         .then(()=>{
             setComment('')
-        });setCommentsArray([]) 
+        }); 
     }else{
         window.alert('write something')
     }
-       
+    
     }
     return (
         <div className='comment-input'>

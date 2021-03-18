@@ -13,7 +13,7 @@ export default function Feed() {
     },[])
     return (
         <div className='feed'>
-            {posts.sort((a,b)=>b.timestamp-a.timestamp).map(({id,post})=>{
+            {posts.map(({id,post})=>{
                 return(
                     <Post 
                         key={id}
